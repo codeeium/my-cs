@@ -12,7 +12,7 @@ const App = () => {
             <MouseTracker>
                 {({ x, y }) => (
                     <div>
-                        <p>Mouse position: ({x}, {y})</p>
+                        <p>Mouse Current position (X,Y) : ({x}, {y})</p>
                     </div>
                 )}
             </MouseTracker>
@@ -52,10 +52,37 @@ const MouseTracker = ({ children }) => {
     };
 
     return (
-        <div style={{ height: '100vh' }} onMouseMove={handleMouseMove}>
+        <div style={{ height: '1000vh' }} onMouseMove={handleMouseMove}>
             {children(position)}
         </div>
     );
 };
 
-export default App;
+export default App
+
+;
+
+// import React from "react";
+// import ReactDOM from "react-dom/client";
+//
+// const App = () => {
+//     // Creating a Virtual DOM element
+//     // const vdomElement = React.createElement(
+//     //     "div",
+//     //     { className: "container" },
+//     //     React.createElement("h1", null, "Hello Virtual DOM!"),
+//     //     React.createElement("p", null, "Open the console to see the Virtual DOM.")
+//     // );
+//
+//     // Logging Virtual DOM to console
+//     // console.log("Virtual DOM Structure:", vdomElement);
+//
+//     return (
+//         <div>
+//             <h12>React Virtual DOM Example</h12>
+//             <p2>Check the console to see the Virtual DOM structure.</p2>
+//         </div>
+//     );
+// };
+//
+// export default App;
